@@ -4,11 +4,7 @@
 <div class=page>
   <h1>MyApp</h1>
   <div class=metanav>
-  {% if not session.logged_in %}
-    <a href="{{ url_for('contact') }}">contact</a>
-  {% else %}
-    <a href="{{ url_for('contact') }}">contact</a>
-  {% endif %}
+    <a href="{{ url_for('contact') }}">clean</a>
   </div>
   {% for message in get_flashed_messages() %}
     <div class=flash>{{ message }}</div>
